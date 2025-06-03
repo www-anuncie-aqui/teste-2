@@ -1,0 +1,14 @@
+[
+    {
+        "nome": "Vídeo 1 - Exemplo",
+        "arquivo": "videos/video1.mp4"
+    },
+    {
+        "nome": "Vídeo 2 - Exemplo",
+        "arquivo": "videos/video2.mp4"
+    },
+    {
+        "nome": "Vídeo 3 - Exemplo",
+        "arquivo": "videos/video3.mp4"
+    }
+]
