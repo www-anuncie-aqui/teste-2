@@ -1,20 +1,28 @@
-fetch('videos.json')
-    .then(response => response.json())
-    .then(videos => {
-        const galeria = document.getElementById('galeria');
+const videos = [
+    {
+        title: "Video 1",
+        src: "https://drive.google.com/file/d/1NRs5uVYehYRLh3bvVH67oFZ7aOKcIYGN/preview"
+    },
+    {
+        title: "Video 2",
+        src: "https://drive.google.com/file/d/11tlbz9UMDGx3xBuvDs81v1Mafg42OqEE/preview"
+    },
+    {
+        title: "Video 3",
+        src: "https://drive.google.com/file/d/1zI3afsQ3K8cbscPZK6rFuObh0nEhfilA/preview"
+    }
+];
 
-        videos.forEach(video => {
-            const card = document.createElement('div');
-            card.className = 'video-card';
+const container = document.getElementById('videos');
 
-            card.innerHTML = `
-                <a href="${video.arquivo}" target="_blank">
-                    <video src="${video.arquivo}" muted autoplay loop playsinline></video>
-                    <p>${video.nome}</p>
-                </a>
-            `;
+videos.forEach(video => {
+    const videoElement = document.createElement('div');
+    videoElement.className = 'video-box';
 
-            galeria.appendChild(card);
-        });
-    })
-    .catch(error => console.error('Erro ao carregar os vídeos:', error));
+    videoElement.innerHTML = `
+        <h3>${video.title}</h3>
+        <iframe src="${video.src}" allow="autoplay" allowfullscreen></iframe>
+    `;
+
+    container.appendChild(videoElement);
+});
