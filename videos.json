@@ -1,14 +1,14 @@
 [
-    {
-        "nome": "Vídeo 1 - Exemplo",
-        "arquivo": "https://drive.google.com/file/d/1xgqlz-rdIEfs-KHFS3tNNRBDaIbOpZKg/view?usp=drive_link"
-    },
-    {
-        "nome": "Vídeo 2 - Exemplo",
-        "arquivo": "videos/video2.mp4"
-    },
-    {
-        "nome": "Vídeo 3 - Exemplo",
-        "arquivo": "videos/video3.mp4"
-    }
+  {
+    "title": "Video 1",
+    "src": "https://drive.google.com/uc?export=download&id=1NRs5uVYehYRLh3bvVH67oFZ7aOKcIYGN"
+  },
+  {
+    "title": "Video 2",
+    "src": "https://drive.google.com/uc?export=download&id=11tlbz9UMDGx3xBuvDs81v1Mafg42OqEE"
+  },
+  {
+    "title": "Video 3",
+    "src": "https://drive.google.com/uc?export=download&id=1zI3afsQ3K8cbscPZK6rFuObh0nEhfilA"
+  }
 ]
